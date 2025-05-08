@@ -9,6 +9,7 @@ import org.springframework.ai.tool.ToolCallback;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.definition.ToolDefinition;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 @Service
 public class ChatService {
@@ -32,10 +33,10 @@ public class ChatService {
 
     }
 
-    public String chat(String userInput) {
+    public Flux<String> chat(String userInput) {
         return chatClient.prompt()
                 .user(userInput)
-                .call()
+                .stream()
                 .content();
     }
 
