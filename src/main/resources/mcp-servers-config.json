@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "vaadin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "vaadin-docs-mcp-server"
+      ]
+    },
+    "jetbrains": {
+      "command": "npx",
+      "args": ["-y", "@jetbrains/mcp-proxy"]
+    }
+  }
+}
