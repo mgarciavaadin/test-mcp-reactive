@@ -1,5 +1,5 @@
 # Description
-Test project with 2 branches to test an issue when using MCP spring AI support with reactive framework
+Test project with 3 branches to test an issue when using MCP spring AI support with reactive framework.
 
 # Test
 
